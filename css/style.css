@@ -18,8 +18,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  /* background-color: var(--bg); */
-  background-image: url("../img/Backgroundweb-01.jpg");
+  background-color: var(--bg);
   background-size: 1350px;
   color: #fff;
 }
@@ -534,10 +533,6 @@ footer .credit a {
 
   .hero {
     min-height: 57vh;
-  }
-
-  body {
-    background-size: 450px;
   }
 }
 
