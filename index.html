@@ -216,7 +216,7 @@
     <!-- Kontak Kami Start-->
     <section id="contact" class="contact">
       <h2><span>Kontak</span> Kami</h2>
-      <p>Hubungi Kami Untuk Info Lebih Lanjut</p>
+      <p>Tinggalkan Contact & Pesan Anda</p>
 
       <div class="row">
         <iframe
@@ -227,18 +227,18 @@
           class="map"
         ></iframe>
 
-        <form action="">
+        <form action="" name="as-contact-form" method="get">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="Nama" />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="Email" />
+            <input type="text" name="nama" placeholder="Nama" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="No. Hp" />
+            <input type="number" name="no.wa" placeholder="No. WA Anda" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" name="pesan" placeholder="Tulis Pesan Anda" />
           </div>
           <button type="submit" class="btn">Kirim Pesan</button>
         </form>
@@ -295,5 +295,17 @@
         },
       });
     </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbznKd0iEcJYbCUogdDLk6mkk573d36EqKHae7EMTmlGNi0EKA5fM7SunfY11WqmfH6zsQ/exec'
+  const form = document.forms['as-contact-form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
   </body>
 </html>
