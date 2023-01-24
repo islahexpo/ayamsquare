@@ -91,11 +91,27 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/outlet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+  animation: animate 21s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(../img/outlet.jpg);
+  }
+  25% {
+    background-image: url(../img/outlet2.jpg);
+  }
+  50% {
+    background-image: url(../img/outlet3.jpg);
+  }
+  75% {
+    background-image: url(../img/outlet4.jpg);
+  }
 }
 
 .hero::after {
