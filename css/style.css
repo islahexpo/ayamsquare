@@ -248,10 +248,10 @@ body {
 .menu .row .menu-card .kategori {
   padding: 0.5rem;
   margin-bottom: 1rem;
-  background-color: #077c1a;
+  background-color: var(--primary);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #fff;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   font-size: large;
 }
 
@@ -419,6 +419,64 @@ footer .credit a {
   color: #53ff70;
 }
 
+/* format booking */
+.pembungkus1 {
+  position: relative;
+  display: block;
+  padding: 3rem 5rem;
+  padding-bottom: 1rem;
+  background-color: #222;
+  margin: auto;
+  margin-top: -10rem;
+  width: 350px;
+  border-radius: 0.5rem;
+  line-height: 0.9rem;
+  margin-bottom: 5rem;
+  overflow-y: scroll;
+  height: 50px;
+  visibility: hidden;
+  align-items: center;
+}
+
+.pembungkus1 span {
+  font-weight: 700;
+}
+
+.pembungkus1 #myinput {
+  font-size: medium;
+}
+
+.k2-copy-button svg {
+  margin-right: 10px;
+  vertical-align: top;
+}
+.k2-copy-button {
+  height: 45px;
+  width: 50px;
+  color: #fff;
+  background: var(--primary);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.k2-copy-button:hover {
+  background: #ffc387;
+}
+@media (max-width: 480px) {
+  #k2button {
+    width: 79%;
+    margin-left: 5rem;
+    visibility: visible;
+  }
+}
+
 /* Media Queries */
 
 /* Laptop */
@@ -429,6 +487,10 @@ footer .credit a {
   }
   .download a {
     margin-left: 50.1rem;
+  }
+
+  #k2button {
+    visibility: hidden;
   }
 }
 
@@ -445,6 +507,10 @@ footer .credit a {
   }
   #hamburger-menu {
     display: inline-block;
+  }
+
+  #k2button {
+    visibility: visible;
   }
 
   .navbar .navbar-nav {
