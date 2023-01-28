@@ -103,14 +103,20 @@ body {
   0% {
     background-image: url(../img/outlet.jpg);
   }
-  25% {
+  20% {
     background-image: url(../img/outlet2.jpg);
   }
-  50% {
+  40% {
     background-image: url(../img/outlet3.jpg);
   }
-  100% {
+  60% {
     background-image: url(../img/outlet4.jpg);
+  }
+  80% {
+    background-image: url(../img/outlet5.jpg);
+  }
+  100% {
+    background-image: url(../img/outlet6.jpg);
   }
 }
 
