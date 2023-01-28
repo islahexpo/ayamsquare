@@ -280,7 +280,6 @@ Pesanan         :
             <input type="text" name="pesan" placeholder="Tulis Pesan Anda" />
           </div>
           <button type="submit" class="btn-kirim">Kirim Pesan</button>
-          <button type="submit" class="btn-sukses">Terimakasih Pesanmu Sudah Kami Terima 😊</button>
         </form>
       </div>
     </section>
@@ -339,16 +338,9 @@ Pesanan         :
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbznKd0iEcJYbCUogdDLk6mkk573d36EqKHae7EMTmlGNi0EKA5fM7SunfY11WqmfH6zsQ/exec'
   const form = document.forms['as-contact-form']
-  const btnKirim = document.querySelector('.btn-kirim')
-  const btnSukses = docuemnt.querySelector('.btn-sukses')
 
   form.addEventListener('submit', e => {
     e.preventDefault();
-    // ketika tombol submit diklik
-    // tampilkan tombol loading, hilangkan tombol kirim
-    btnKirim.classList.toggle('d-none');
-    btnSukses.classList.toggle('d-none');
-
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         form.reset();
