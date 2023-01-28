@@ -100,23 +100,17 @@ body {
 }
 
 @keyframes change {
-  0% {
+  10% {
     background-image: url(../img/outlet.jpg);
   }
-  20% {
+  25% {
     background-image: url(../img/outlet2.jpg);
   }
-  40% {
+  50% {
     background-image: url(../img/outlet3.jpg);
   }
-  60% {
-    background-image: url(../img/outlet4.jpg);
-  }
-  80% {
-    background-image: url(../img/outlet5.jpg);
-  }
   100% {
-    background-image: url(../img/outlet6.jpg);
+    background-image: url(../img/outlet4.jpg);
   }
 }
 
