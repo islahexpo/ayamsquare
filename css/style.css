@@ -96,6 +96,22 @@ body {
   background-position: center;
   position: relative;
   background-image: url(../img/outlet.jpg);
+  animation: change 10s infinite ease-in-out;
+}
+
+@keyframes change {
+  0% {
+    background-image: url(../img/outlet.jpg);
+  }
+  25% {
+    background-image: url(../img/outlet2.jpg);
+  }
+  50% {
+    background-image: url(../img/outlet3.jpg);
+  }
+  100% {
+    background-image: url(../img/outlet4.jpg);
+  }
 }
 
 .hero::after {
