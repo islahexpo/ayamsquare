@@ -307,7 +307,7 @@ body {
   color: #fff;
 }
 
-.contact .row form .btn {
+.contact .row form .btn-kirim {
   margin-top: 3rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -315,6 +315,16 @@ body {
   color: #fff;
   background-color: var(--primary);
   cursor: pointer;
+}
+.contact .row form .btn-sukses {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #7a430f;
+  cursor: pointer;
+  display: none;
 }
 
 /* Ojol */
